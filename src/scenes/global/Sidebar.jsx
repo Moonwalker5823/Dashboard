@@ -16,8 +16,6 @@ import PieChartOutlinedIcon from '@mui/icons-material/PieChartOutlined';
 import TimelineOutlinedIcon from '@mui/icons-material/TimelineOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
-import { PrecisionManufacturingRounded } from '@mui/icons-material';
-import { fontWeight } from '@mui/system';
 
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
