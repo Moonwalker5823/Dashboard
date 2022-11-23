@@ -44,7 +44,7 @@ const Sidebar = () => {
   return (
     <Box
       sx={{
-        "& .pro-sidebr-inner": {
+        "& .pro-sidebar-inner": {
           background: `${colors.primary[400]} !important`
         },
         "& .pro-icon-wrapper": {
@@ -69,14 +69,14 @@ const Sidebar = () => {
             icon={isCollapsed ? <MapOutlinedIcon/> : undefined}
             style={{
               margin: '10px 0 20px 0',
-              color: 'colors.grey[100]'
+              color: colors.grey[100]
             }}
           />
           
           {!isCollapsed && (
             <Box
               display='flex'
-              justifyContent="center"
+              justifyContent="space-between"
               alignItems="center"
               ml='15px'
             >
@@ -134,9 +134,11 @@ const Sidebar = () => {
               />
               <Typography
                 variant='h6'
-                color={'colors.palette[300]'}
+                color={colors.grey[300]}
                 sx={{ m: "15px 0 5px 20px"}}
-              >Data</Typography>
+              >
+                Data
+              </Typography>
               <Item 
                 title='Manage Team'
                 to="/team"
@@ -160,7 +162,7 @@ const Sidebar = () => {
               />
               <Typography
                 variant='h6'
-                color={'colors.palette[300]'}
+                color={colors.grey[300]}
                 sx={{ m: "15px 0 5px 20px"}}
               >Pages</Typography>
               <Item 
@@ -186,7 +188,7 @@ const Sidebar = () => {
               />
               <Typography
                 variant='h6'
-                color={'colors.palette[300]'}
+                color={colors.grey[300]}
                 sx={{ m: "15px 0 5px 20px"}}
               >Charts</Typography>
               <Item 
