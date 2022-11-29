@@ -1,16 +1,16 @@
-import { Box, Button, Typography, useTheme } from "@mui/material"
+import { Box, Button, useTheme } from "@mui/material"
 import { tokens } from "../../theme"
 import Header from '../../components/Header'
-// import { mockTransactions } from "../../data/mockData"
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
-import BarChart from "../../components/BarChart"
-import ProgressCircle from "../../components/ProgressCircle"
 import DashEmail from "../../components/dashComponents/DashEmail";
-import DashPointOfSale from "../../components/DashPointOfSale";
+import DashPointOfSale from "../../components/dashComponents/DashPointOfSale";
 import DashPerson from "../../components/dashComponents/DashPerson";
 import DashTraffic from "../../components/dashComponents/DashTraffic";
 import DashRevenue from "../../components/dashComponents/DashRevenue";
 import DashTransactions from "../../components/dashComponents/DashTransactions";
+import DashCampaign from "../../components/dashComponents/DashCampaign";
+import DashSales from "../../components/dashComponents/DashSales";
+import DashGeo from "../../components/dashComponents/DashGeo";
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -57,63 +57,9 @@ const Dashboard = () => {
       <DashTransactions />
 
       {/* THIRD ROW */}
-            <Box
-              gridColumn="span 4"
-              gridRow="span 2"
-              backgroundColor={colors.primary[400]}
-              p="30px"
-            >
-              <Typography 
-                variant="h5"
-                fontWeight='600'
-              >
-                Campaign
-              </Typography>
-              <Box display='flex' flexDirection="column" alignItems="center" mt="25px">
-                <ProgressCircle size="h5"/>
-                <Typography variant="h5" color={colors.greenAccent[500]} sx={{ mt: '15px'}}>
-                  $48, 486 revenue Generated
-                </Typography>
-                <Typography>Includes extra misc expenditures and costs</Typography>
-              </Box>
-            </Box>
-
-            {/*  */}
-            <Box
-              gridColumn="span 4"
-              gridRow="span 2"
-              backgroundColor={colors.primary[400]}
-            >
-              <Typography 
-                variant="h5"
-                fontWeight='600'
-                sx={{ p: "30px 30px 0 30px"}}
-              >
-                Sales Quality
-              </Typography>
-              <Box height="250px" mt="-20px">
-                <BarChart isDashboard={true}/>
-              </Box>
-            </Box>
-
-            {/*  */}
-            {/* <Box
-              gridColumn="span 4"
-              gridRow="span 2"
-              backgroundColor={colors.primary[400]}
-              padding="30px"
-            >
-              <Typography 
-                variant="h5"
-                fontWeight='600'
-                sx={{ mb: "15px"}}
-              >
-                Geography Based Traffic
-              </Typography>
-              <Box height="200px">
-                <GeographyChart isDashboard={true}/>
-              </Box>
-            </Box> */}
+      <DashCampaign/>
+      <DashSales/>
+      <DashGeo/>
       </Box>
     </Box>
   )

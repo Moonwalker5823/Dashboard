@@ -17,7 +17,7 @@ const DashTraffic = () => {
           >
             <StatBox
               title="1,346,277"
-              subtitle="Inbount Traffic"
+              subtitle="Inbound Traffic"
               progress="0.80"
               increase="+43%"
               icon={

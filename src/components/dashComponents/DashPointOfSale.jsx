@@ -1,6 +1,6 @@
 import { Box, useTheme } from "@mui/material"
-import { tokens } from "../theme"
-import StatBox from "./StatBox"
+import { tokens } from "../../theme"
+import StatBox from "../StatBox"
 import PointOfSaleIcon from "@mui/icons-material/PointOfSale"
 
 import React from 'react'
