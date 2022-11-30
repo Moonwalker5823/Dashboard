@@ -27,5 +27,3 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=moonwalker5823&show_icons=true&locale=en" alt="moonwalker5823" /></p>
 
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=moonwalker5823&show_icons=true&locale=en" alt="moonwalker5823" /></p>
